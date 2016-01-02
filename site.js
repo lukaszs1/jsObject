@@ -1,14 +1,14 @@
-
-
-var runLinks = function  () {
-	var linkList = {
+var linkList = {
 	Google:"http://goolle.com",
 	Micosoft:"http://micosoft.com",
 	Apple:"http://apple.com"
 	};
+
+var runLinks = function  () {
+	
 	var list= document.querySelectorAll('.nav');
 	var output = '<ul>';
-	for (var ke in linkList) {
+	for (var ke in arguments[0]) {
 		output+= '<li><a href="'+linkList[ke]+'">'+ke+'</a></li>';
 		
 	};
@@ -17,4 +17,4 @@ var runLinks = function  () {
 		list[i].innerHTML=output;
 	};
 
-}();
+}(linkList);

@@ -1,0 +1,1 @@
+Passing object to function to remove need for argument list
