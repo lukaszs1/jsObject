@@ -1,6 +1,6 @@
 
 
-( function  () {
+var runLinks = function  () {
 	var linkList = {
 	Google:"http://goolle.com",
 	Micosoft:"http://micosoft.com",
@@ -17,4 +17,4 @@
 		list[i].innerHTML=output;
 	};
 
-})();
+}();
